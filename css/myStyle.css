@@ -1286,3 +1286,47 @@ iframe#callbell-iframe {
     font-family: 'Enriqueta', serif !important;
     font-size: 19px;
 }
+
+.site-footer p {
+    font-weight: bold;
+    font-family: unset;
+}
+
+.slider-content {
+    display: none !important;
+}
+
+#artical_carousel {
+    margin: 0 !important;
+}
+
+.home-blog-image.grid__item a img {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin: auto;
+}
+
+.d-flex {
+    display: inline-flex !important;
+}
+
+.Aboutcard h1 a img {
+    height: 100px;
+}
+
+.SubTitle {
+    padding: 0 58px;
+    font-family: 'El Messiri', sans-serif;
+    font-size: 22px;
+    text-align: center;
+    color: #076cec;
+}
+
+.Aboutcard h1 {
+    margin: 0;
+}
+
+.a-center {
+    text-align: center;
+}
