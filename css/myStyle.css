@@ -1294,7 +1294,7 @@ iframe#callbell-iframe {
 
 .site-footer p {
     font-weight: bold;
-    font-family: unset;
+    font-family: 'Enriqueta', serif;
 }
 
 .slider-content {
@@ -1613,7 +1613,7 @@ span {
 }
 
 .collapse.list-unstyled li {
-    padding: 0 45px;
+    padding: 0 40px;
 }
 
 .show {
@@ -1632,5 +1632,29 @@ a:focus,
 }
 
 .big-size {
-    font-size: 26px;
+    font-size: 21px;
+}
+
+.d-block {
+    display: block !important;
+}
+
+.col-xl-4.col-lg-4.col-md-6.col-sm-6.col-12 {
+    display: none;
+}
+
+.product-container .product-button a:hover,
+.product-container .product-button button:hover,
+.product-tab-type-3 .dt-sc-tabs-content .one-whole .product-button a:hover,
+.product-tab-type-3 .dt-sc-tabs-content .one-whole .product-button button:hover {
+    background: #076cec;
+    color: #ffffff !important;
+}
+
+a.add-cart-btn {
+    border-top-right-radius: 7px !important;
+}
+
+a#face-mask {
+    border-top-left-radius: 7px !important;
 }

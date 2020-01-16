@@ -47,10 +47,8 @@
     <link href="css/bootstrap.min.css">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <script src="js/header81e7.js" type="text/javascript"></script>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
     <link href="https://fonts.googleapis.com/css?family=Audiowide&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Cantata+One&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Enriqueta&display=swap" rel="stylesheet">
     <link href="Bootstrap/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
     <script src="Bootstrap/jquery-3.4.1.min.js" type="text/javascript"></script>
     <script src="Bootstrap/bootstrap.js" type="text/javascript"></script>
@@ -79,16 +77,16 @@
 </script>
 
 <body id="medik" class="template-index" style="overflow:hidden !important">
-    <div class="userForm">
+    <!-- <div class="userForm">
         <div class="user-drawer">
             <div class="user-menu">
                 <div class="ModalContent">
                     <h1 style="float: right;padding:10px;cursor: pointer;" onclick="Close(1)">X</h1>
                     <div class="row">
-                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+                        <div class="containercontainercol-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 d-block d-block">
                             <img src="imges/Pro/GCMSLabona-Check-A1C.jpg" class="featured-image" alt="Oxygen Pump">
                         </div>
-                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+                        <div class="containercontainercol-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 d-block d-block">
                             <div class="row">
 
                             </div>
@@ -97,7 +95,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 
     <!-- <div class="wrapper-container">
         <div class="header-type-5">
@@ -134,7 +132,7 @@
 
     <div class="wrapper">
         <!-- Sidebar Holder -->
-        <nav id="sidebar">
+        <nav id="sidebar" class="active">
             <div class="sidebar-header">
                 <a href="index.html">
                     <img class="normal-logo" src="imges/LOGO.jpg" alt="" itemprop="logo">
@@ -147,24 +145,27 @@
             <ul class="list-unstyled components">
                 <li><a href="index.html"><i class="fas fa-home big-size"></i> Home</a></li>
                 <li>
-                    <a data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="fa fa-list-alt  big-size" aria-hidden="true"></i> Products</a>
+                    <a onclick="Filter(0)" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="fa fa-list-alt big-size" aria-hidden="true"></i> Products</a>
                     <ul class="collapse list-unstyled show in" id="homeSubmenu">
                         <li>
-                            <a class="dropdownlink" href="#">Home 1</a>
+                            <a onclick="Filter(1)" class="dropdownlink" href="#">Coagulation</a onclick="Filter(0)">
                         </li>
                         <li>
-                            <a class="dropdownlink" href="#">Home 2</a>
+                            <a onclick="Filter(2)" class="dropdownlink" href="#">Hematology</a onclick="Filter(0)">
                         </li>
                         <li>
-                            <a class="dropdownlink" href="#">Home 3</a>
+                            <a onclick="Filter(3)" class="dropdownlink" href="#">Chemiluminescence</a>
+                        </li>
+                        <li>
+                            <a onclick="Filter(4)" class="dropdownlink" href="#">Point Of Care</a>
                         </li>
                     </ul>
                 </li>
                 <li>
-                    <a href="index.html#contact_form">Contact Us</a>
+                    <a href="index.html#contact_form"><i class="fas fa-phone big-size"></i> Contact Us</a>
                 </li>
                 <li>
-                    <a href="About-Us.html">About Us</a>
+                    <a href="About-Us.html"><i class="fas fa-user big-size"></i> About Us</a>
                 </li>
             </ul>
         </nav>
@@ -183,7 +184,7 @@
                 </div>
 
                 <div class="row" style="justify-content: center;align-items: center;display: inline-flex !important;align-content: center;margin: auto;">
-                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+                    <div class="container col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 d-block d-block Product_3">
                         <div class="ProCardProduct grid__item">
                             <div class="article">
                                 <div class="products product-hover-14">
@@ -196,7 +197,7 @@
                                             <div class="product-button">
                                                 <a href="imges/Details/Chemiluminescence Immunoassay RL-C2000.jpg" target="_blank" target="_blank" id="face-mask" class="quick-view-text" title="Quick View">
                                                     <b class="far fa-eye"></b>
-                                                    <i> Quick View</i>
+                                                    <i>Detials</i>
                                                 </a>
                                                 <a class="add-cart-btn" onclick="window.open('http://www.realytech.com/en/')" href="" target="_blank" title="Add to Cart">
                                                     <b class="fas fa-shopping-cart"></b>
@@ -220,7 +221,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+                    <div class="container col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 d-block Product_2">
                         <div class="ProCardProduct grid__item">
                             <div class="article">
                                 <div class="products product-hover-14">
@@ -234,7 +235,7 @@
                                             <div class="product-button">
                                                 <a href="imges/Details/Hematology Analyzer Z3.jpg" target="_blank" id="face-mask" class="quick-view-text" title="Quick View">
                                                     <b class="far fa-eye"></b>
-                                                    <i> Quick View</i>
+                                                    <i>Detials</i>
                                                 </a>
                                                 <a class="add-cart-btn" onclick="window.open('https://m.zybio.com/en/Product/Hematology/2019-02-27/100.html')" href="" target="_blank" title="Add to Cart">
                                                     <b class="fas fa-shopping-cart"></b>
@@ -260,7 +261,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+                    <div class="container col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 d-block Product_4">
                         <div class="ProCardProduct grid__item">
                             <div class="article">
                                 <div class="products product-hover-14">
@@ -272,7 +273,7 @@
                                             <div class="product-button">
                                                 <a href="imges/Details/CERA CHECK 1070-0١.jpg" target="_blank" id="face-mask" class="quick-view-text" title="Quick View">
                                                     <b class="far fa-eye"></b>
-                                                    <i> Quick View</i>
+                                                    <i>Detials</i>
                                                 </a>
                                                 <a class="add-cart-btn" onclick="window.open('http://gcmedis.com/src/sub213.php')" href="" target="_blank" title="Add to Cart">
                                                     <b class="fas fa-shopping-cart"></b>
@@ -297,7 +298,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+                    <div class="container col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 d-block Product_4">
                         <div class="ProCardProduct grid__item">
                             <div class="article">
                                 <div class="products product-hover-14">
@@ -309,7 +310,7 @@
                                             <div class="product-button">
                                                 <a href="imges/Details/cera check Hb-0١.jpg" target="_blank" id="face-mask" class="quick-view-text" title="Quick View">
                                                     <b class="far fa-eye"></b>
-                                                    <i> Quick View</i>
+                                                    <i>Detials</i>
                                                 </a>
                                                 <a class="add-cart-btn" onclick="window.open('http://gcmedis.com/src/sub22.php')" href="" target="_blank" title="Add to Cart">
                                                     <b class="fas fa-shopping-cart"></b>
@@ -334,7 +335,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+                    <div class="container col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 d-block Product_4">
                         <div class="ProCardProduct grid__item">
                             <div class="article">
                                 <div class="products product-hover-14">
@@ -347,7 +348,7 @@
                                             <div class="product-button">
                                                 <a href="imges/Details/labona check-0١.jpg" target="_blank" id="face-mask" class="quick-view-text" title="Quick View">
                                                     <b class="far fa-eye"></b>
-                                                    <i> Quick View</i>
+                                                    <i>Detials</i>
                                                 </a>
                                                 <a class="add-cart-btn" onclick="window.open('http://gcmedis.com/src/sub231.php')" href="" target="_blank" title="Add to Cart">
                                                     <b class="fas fa-shopping-cart"></b>
@@ -376,7 +377,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+                    <div class="container col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 d-block Product_4">
                         <div class="ProCardProduct grid__item">
                             <div class="article">
 
@@ -391,7 +392,7 @@
                                             <div class="product-button">
                                                 <a href="imges/Details/green care-0١.jpg" target="_blank" id="face-mask" class="quick-view-text" title="Quick View">
                                                     <b class="far fa-eye"></b>
-                                                    <i> Quick View</i>
+                                                    <i>Detials</i>
                                                 </a>
                                                 <a class="add-cart-btn" onclick="window.open('https://www.omnia-health.com/product/greencare-a1c')" href="" target="_blank" title="Add to Cart">
                                                     <b class="fas fa-shopping-cart"></b>
@@ -417,7 +418,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+                    <div class="container col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 d-block Product_1">
                         <div class="ProCardProduct grid__item">
                             <div class="products product-hover-14 ">
                                 <div class="product-container">
@@ -428,7 +429,7 @@
                                         <div class="product-button">
                                             <a href="imges/Details/coadata 2004.4004-0١.jpg" target="_blank" id="face-mask" class="quick-view-text" title="Quick View">
                                                 <b class="far fa-eye"></b>
-                                                <i> Quick View</i>
+                                                <i>Detials</i>
                                             </a>
                                             <a class="add-cart-btn" onclick="window.open('https://www.labitec.de/produkte/coadata-4004-2/')" href="" target="_blank" title="Add to Cart">
                                                 <b class="fas fa-shopping-cart"></b>
@@ -454,7 +455,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+                    <div class="container col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 d-block Product_1">
                         <div class="ProCardProduct grid__item">
                             <div class="article">
                                 <div class="products product-hover-14 ">
@@ -466,7 +467,7 @@
                                             <div class="product-button">
                                                 <a href="imges/Details/coadata 2004.4004-0١.jpg" target="_blank" id="face-mask" class="quick-view-text" title="Quick View">
                                                     <b class="far fa-eye"></b>
-                                                    <i> Quick View</i>
+                                                    <i>Detials</i>
                                                 </a>
                                                 <a class="add-cart-btn" onclick="window.open('https://www.labitec.de/produkte/coadata-4004-2/')" href="" target="_blank" title="Add to Cart">
                                                     <b class="fas fa-shopping-cart"></b>
@@ -492,7 +493,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+                    <div class="container col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 d-block Product_1">
                         <div class="ProCardProduct grid__item">
                             <div class="article">
                                 <div class="products product-hover-14 ">
@@ -504,7 +505,7 @@
                                             <div class="product-button">
                                                 <a href="imges/Details/CoaLAB 1000.png" target="_blank" id="face-mask" class="quick-view-text" title="Quick View">
                                                     <b class="far fa-eye"></b>
-                                                    <i> Quick View</i>
+                                                    <i>Detials</i>
                                                 </a>
                                                 <a class="add-cart-btn" onclick="window.open('http://www.labitec.de/produkte/coalab-1000-2')" href="" target="_blank" title="Add to Cart">
                                                     <b class="fas fa-shopping-cart"></b>
@@ -530,7 +531,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+                    <div class="container col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 d-block Product_1">
                         <div class="ProCardProduct grid__item">
                             <div class="article">
                                 <div class="products product-hover-14 ">
@@ -542,7 +543,7 @@
                                             <div class="product-button">
                                                 <a href="imges/Details/4004-preview.jpg" target="_blank" id="face-mask" class="quick-view-text" title="Quick View">
                                                     <b class="far fa-eye"></b>
-                                                    <i> Quick View</i>
+                                                    <i>Detials</i>
                                                 </a>
                                                 <a class="add-cart-btn" onclick="window.open('https://www.labitec.de/produkte/apact-4004-2/')" href="" target="_blank" title="Add to Cart">
                                                     <b class="fas fa-shopping-cart"></b>
@@ -567,7 +568,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+                    <div class="container col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 d-block Product_1">
                         <div class="ProCardProduct grid__item">
                             <div class="article">
                                 <div class="products product-hover-14 ">
@@ -580,7 +581,7 @@
                                             <div class="product-button">
                                                 <a href="imges/Details/CoaDATA 504+.png" target="_blank" id="face-mask" class="quick-view-text" title="Quick View">
                                                     <b class="far fa-eye"></b>
-                                                    <i> Quick View</i>
+                                                    <i>Detials</i>
                                                 </a>
                                                 <a class="add-cart-btn" onclick="window.open('http://www.labitec.de/produkte/coadata-504-4/')" href="" target="_blank" title="Add to Cart">
                                                     <b class="fas fa-shopping-cart"></b>
@@ -607,7 +608,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+                    <div class="container col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 d-block Product_1">
                         <div class="ProCardProduct grid__item">
 
                             <div class="article">
@@ -623,7 +624,7 @@
                                             <div class="product-button">
                                                 <a href="imges/Details/coadata 405 flyer-0١.jpg" target="_blank" id="face-mask" class="quick-view-text" title="Quick View">
                                                     <b class="far fa-eye"></b>
-                                                    <i> Quick View</i>
+                                                    <i>Detials</i>
                                                 </a>
                                                 <a class="add-cart-btn" onclick="window.open('https://www.labitec.de/')" href="" target="_blank" title="Add to Cart">
                                                     <b class="fas fa-shopping-cart"></b>
@@ -673,7 +674,7 @@
                                             <p style="text-align: justify;color:#ffffff;">Alpha Omega is one of the leading and most competitive companies in Egypt. We are dedicated to bringing you the most accurate, high quality and efficient diagnostic reagents and instruments for over a decade.</p>
                                         </div>
 
-                                        <div class="grid__item wide--one-third post-large--one-third large--one-third medium--one-half">
+                                        <div class="grid__item wide--one-third post-large--one-third large--one-third medium--one-half footer-subtilte">
                                             <h4 style="color:#ffffff;" class="NewFont">Contact us</h4>
                                             <div class="address">
                                                 <p style="color:#ffffff;font-family: 'Cantata One', serif;">11A Abaza Square - Misr El Gadida Cairo - Egypt</p>
@@ -682,16 +683,11 @@
                                             </div>
                                             <a style="color:#ffffff;font-family: 'Cantata One', serif;" href="mailto:info@alphaomegaegypt.com">
                                                 <i class="zmdi zmdi-caret-right-circle">
-                                        </i>info@alphaomegaegypt.com</a>
+                                                    </i>info@alphaomegaegypt.com</a>
                                         </div>
 
                                         <div class="grid__item wide--one-third post-large--one-third large--one-third medium--one-half">
                                             <h4 style="color:#ffffff;" class="NewFont"> Support</h4>
-                                            <!-- <ul class="">
-                                    <li><a style="color:#ffffff;" href="https://www.facebook.com/">Facebook</a></li>
-                                    <li><a style="color:#ffffff;" href="https://www.Youtube.com/">Youtube</a></li>
-                                    <li><a style="color:#ffffff;" href="https://www.Twitter.com/">Twitter</a></li>
-                                </ul> -->
                                             <div class="footer_social_links">
                                                 <ul class="site-footer__links" style="display: inline-flex;">
                                                     <li>
@@ -711,12 +707,6 @@
                                                             <span class="fallback-text">Google</span>
                                                         </a>
                                                     </li>
-                                                    <li>
-                                                        <a class="icon-fallback-text tumblr" target="blank" href="#" title="Tumblr">
-                                                            <span class="fab fa-tumblr" aria-hidden="true"></span>
-                                                            <span class="fallback-text">Tumblr</span>
-                                                        </a>
-                                                    </li>
                                                 </ul>
 
                                             </div>
@@ -724,124 +714,147 @@
 
                                     </div>
                                 </div>
-                                <div class="footer-bottom">
-                                    <div class="grid__item footer-bottom__menu" style="border-top:1px solid #2f2e2e;">
-                                        <div class="container">
-                                            <ul>
-                                                <li><a style="color:#ffffff;border-right:1px solid #ffffff;" href="index.html">Home</a>
+                            </div>
+                            <div class="footer-bottom">
+                                <div class="grid__item footer-bottom__menu" style="border-top:1px solid #2f2e2e;">
+                                    <div class="container">
+                                        <ul>
+                                            <li><a style="color:#ffffff;border-right:1px solid #ffffff;" href="index.html">Home</a></li>
+                                            <li><a style="color:#ffffff;border-right:1px solid #ffffff;" href="products.html">Products</a></li>
+                                            <li><a style="color:#ffffff;border-right:1px solid #ffffff;" href="index.html">Contact Us</a>
+                                                <li><a style="color:#ffffff;border-right:1px solid #ffffff;" href="About-Us.html">About Us</a>
                                                 </li>
-                                                <li><a style="color:#ffffff;border-right:1px solid #ffffff;" href="products.html">Products</a></li>
-                                                </li>
-                                                <li><a style="color:#ffffff;border-right:1px solid #ffffff;" href="index.html">Contact
-                                        Us</a>
-                                                </li>
-                                            </ul>
-                                        </div>
+                                        </ul>
                                     </div>
                                 </div>
+                            </div>
 
                         </footer>
 
                         <div class="grid__item">
                             <div class="copyright" style="background:#000000">
                                 <div class="container">
-                                    <p class="copyright_left" style="color:#ffffff">Copyright &copy; 2019,
+                                    <p class="copyright_left" style="color:#ffffff">Copyright &copy; 2020,
                                         <a target="_blank" rel="nofollow" href="https://www.Queensoft.net">Queensoft</a>
                                     </p>
                                 </div>
                             </div>
                         </div>
-                        </div>
                     </div>
-                    <!--========================Footer======================================-->
-
-
                 </div>
+                <!--========================Footer======================================-->
+
 
             </div>
+
         </div>
+    </div>
 
-        <!-- jQuery CDN - Slim version (=without AJAX) -->
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <!-- Popper.JS -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
-        <!-- Bootstrap JS -->
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
 
-        <script type="text/javascript">
-            $(document).ready(function() {
-                $('#sidebarCollapse').on('click', function() {
-                    $('#sidebar').toggleClass('active');
-                    $(this).toggleClass('active');
-                });
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#sidebarCollapse').on('click', function() {
+                $('#sidebar').toggleClass('active');
+                $(this).toggleClass('active');
             });
-        </script>
+        });
+    </script>
 
 
 
 
 
 
-        <script src="js/timber81e7.js" type="text/javascript"></script>
-        <script src="js/footer81e7.js" type="text/javascript"></script>
-        <script src="js/theme81e7.js" type="text/javascript"></script>
-        <script src="js/option_selection-fe6b72c2bbdd3369ac0bfefe8648e3c889efca213baefd4cfb0dd9363563831f.js" type="text/javascript"></script>
-        <script src="js/api.jquery-e94e010e92e659b566dbc436fdfe5242764380e00398907a14955ba301a4749f.js" type="text/javascript"></script>
-        <script src="js/shop81e7.js" type="text/javascript"></script>
+    <script src="js/timber81e7.js" type="text/javascript"></script>
+    <script src="js/footer81e7.js" type="text/javascript"></script>
+    <script src="js/theme81e7.js" type="text/javascript"></script>
+    <script src="js/option_selection-fe6b72c2bbdd3369ac0bfefe8648e3c889efca213baefd4cfb0dd9363563831f.js" type="text/javascript"></script>
+    <script src="js/api.jquery-e94e010e92e659b566dbc436fdfe5242764380e00398907a14955ba301a4749f.js" type="text/javascript"></script>
+    <script src="js/shop81e7.js" type="text/javascript"></script>
+    <script src="js/wow81e7.js" type="text/javascript"></script>
+    <script src="js/classie81e7.js" type="text/javascript"></script>
+    <script src="js/uisearch81e7.js"></script>
+    <script src="js/magnific-popup81e7.js" type="text/javascript">
+    </script>
+    <script type="text/javascript">
+        if ($('.p-video').length > 0) {
+            $('.jas-popup-url').magnificPopup({
+                disableOn: 0,
+                tLoading: '<div class="loader"><div class="loader-inner"></div></div>',
+                type: 'iframe'
+            });
+        }
+    </script>
+    <script>
+        $(document).ready(function() {
+            var body = $('body');
+            var doc = $(document);
 
+            var showLeftPush = $('#showLeftPush');
+            var nav = $('#cbp-spmenu-s1');
 
-        <script src="js/wow81e7.js" type="text/javascript"></script>
-        <script src="js/classie81e7.js" type="text/javascript"></script>
-        <script src="js/uisearch81e7.js"></script>
-        <script src="js/magnific-popup81e7.js" type="text/javascript">
-        </script>
-        <script type="text/javascript">
-            if ($('.p-video').length > 0) {
-                $('.jas-popup-url').magnificPopup({
-                    disableOn: 0,
-                    tLoading: '<div class="loader"><div class="loader-inner"></div></div>',
-                    type: 'iframe'
-                });
-            }
-        </script>
-        <script>
-            $(document).ready(function() {
-                var body = $('body');
-                var doc = $(document);
+            showLeftPush.on('click', function(e) {
+                e.stopPropagation();
 
-                var showLeftPush = $('#showLeftPush');
-                var nav = $('#cbp-spmenu-s1');
+                body.toggleClass('cbp-spmenu-push-toright');
+                nav.toggleClass('cbp-spmenu-open');
+                showLeftPush.toggleClass('active');
+            });
 
-                showLeftPush.on('click', function(e) {
-                    e.stopPropagation();
+            $('.gf-menu-device-wrapper .close-menu').on('click', function() {
+                showLeftPush.trigger('click');
+            });
 
-                    body.toggleClass('cbp-spmenu-push-toright');
-                    nav.toggleClass('cbp-spmenu-open');
-                    showLeftPush.toggleClass('active');
-                });
-
-                $('.gf-menu-device-wrapper .close-menu').on('click', function() {
+            doc.on('click', function(e) {
+                if (!$(e.target).closest('#cbp-spmenu-s1').length && showLeftPush.hasClass('active')) {
                     showLeftPush.trigger('click');
-                });
-
-                doc.on('click', function(e) {
-                    if (!$(e.target).closest('#cbp-spmenu-s1').length && showLeftPush.hasClass('active')) {
-                        showLeftPush.trigger('click');
-                    }
-                });
+                }
             });
-        </script>
-        <script>
-            function Collapse(id) {
-                if ($(id).hasClass("show"))
-                    $(id).removeClass("show").removeClass("in");
+        });
+    </script>
+    <script>
+        function Collapse(id) {
+            if ($(id).hasClass("show"))
+                $(id).removeClass("show").removeClass("in");
+            else {
+                $(".show.in").removeClass("show").removeClass("in");
+                $(id).addClass("show").addClass("in");
+            }
+        }
+
+        var width = $(window).width();
+        $(window).on('resize', function() {
+            if ($(this).width() != width) {
+                width = $(this).width();
+                if (width < 1300)
+                    $('#sidebar').addClass("active");
                 else {
-                    $(".show.in").removeClass("show").removeClass("in");
-                    $(id).addClass("show").addClass("in");
+                    $('#sidebar').removeClass('active');
                 }
             }
-        </script>
-        <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+        })
+
+        function Filter(id) {
+            if (id == 0) {
+                $('.col-xl-4.col-lg-4.col-md-6.col-sm-6.col-12').addClass('d-block');
+            } else {
+                $('.col-xl-4.col-lg-4.col-md-6.col-sm-6.col-12.d-block').removeClass('d-block');
+                $('.Product_' + id).addClass('d-block');
+            }
+        }
+    </script>
+    <style>
+        .grid-link__meta {
+            display: none !important;
+        }
+    </style>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
 
 </body>
 
