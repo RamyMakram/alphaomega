@@ -306,13 +306,14 @@
     color: #35c7df;
 }
 
-.header-type-5 .menu_icon li {
+
+/* .header-type-5 .menu_icon li {
     color: #263036;
 }
 
 .header-type-5 .menu_icon li {
     border-right: 1px solid #e4e4e4;
-}
+} */
 
 .header-type-5 .menu_icon a,
 .header-type-5 .menu_icon button {
@@ -1204,6 +1205,10 @@ a#face-mask {
     width: 413px;
 }
 
+.ProCardProduct {
+    padding: 10px;
+}
+
 .userForm {
     overflow-x: hidden;
     height: 0;
@@ -1596,4 +1601,36 @@ span {
 
 .footer-subtilte {
     font-size: 12px;
+}
+
+.site-nav-dropdown_inner {
+    display: block !important;
+}
+
+.MainDiv {
+    overflow: auto !important;
+    height: calc(100vh - 20px) !important
+}
+
+.collapse.list-unstyled li {
+    padding: 0 45px;
+}
+
+.show {
+    transition: all 1s ease !important;
+}
+
+a:hover,
+a:focus,
+.text-link:hover,
+.text-link:focus {
+    color: #076cec !important;
+}
+
+.container {
+    width: unset !important;
+}
+
+.big-size {
+    font-size: 26px;
 }
