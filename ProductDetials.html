@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="Bootstrap/jquery-3.4.1.min.js" type="text/javascript"></script>
+    <link href="Bootstrap/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+
+    <script>
+        function VoucherSourcetoPrint(source) {
+
+            return "<html><head><meta property='og:title' content='alphaomegaegypt'><script> function step1(){\n" +
+                "setTimeout('step2()', 10);}\n" +
+                "function step2(){window.print();window.close()}\n" +
+                "</scri" + "pt></head><body onload='step1()'style='text-align: center;'>\n" +
+                "<img style='height: 100%; width: 100%' src='" + source + "' /></body></html>";
+        }
+
+        function VoucherPrint(source) {
+            Pagelink = "AlphaOmega";
+            var pwa = window.open(Pagelink, "_new");
+            pwa.document.open();
+            pwa.document.write(VoucherSourcetoPrint(source));
+            pwa.document.close();
+        }
+        $(document).ready(function() {
+            var name = localStorage.getItem("name");
+            $('#img').attr('src', name)
+        })
+    </script>
+</head>
+
+<body style='text-align: center;'>
+    <img id="img" src="" style="height: 90vh;">
+    <button class="btn btn-primary" style="width: 100%;background-color: blue;color: white;" onclick="VoucherPrint(document.getElementById('img').getAttribute('src'))">Print</button>
+</body>
+
+</html>

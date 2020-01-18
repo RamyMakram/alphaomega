@@ -51,6 +51,7 @@
     <link href="https://fonts.googleapis.com/css?family=Cantata+One&display=swap" rel="stylesheet">
     <link href="Bootstrap/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
     <script src="Bootstrap/jquery-3.4.1.min.js" type="text/javascript"></script>
+    <script src="Bootstrap/jquery.cookie.js" type="text/javascript"></script>
     <script src="Bootstrap/bootstrap.js" type="text/javascript"></script>
     <link rel="stylesheet" href="css/style5.css">
 
@@ -182,7 +183,12 @@
                 <div class="grid__item">
                     <h2 style="background-color: #e7e7e7;text-align: center;padding: 20px;" class="NewFont">Products</h2>
                 </div>
-
+                <script>
+                    function OpenModel(img) {
+                        localStorage.setItem("name", img);
+                        window.open('ProductDetials.html')
+                    }
+                </script>
                 <div class="row" style="justify-content: center;align-items: center;display: inline-flex !important;align-content: center;margin: auto;">
                     <div class="container col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 d-block d-block Product_3">
                         <div class="ProCardProduct grid__item">
@@ -195,7 +201,7 @@
                                         </div>
                                         <div class="ImageWrapper">
                                             <div class="product-button">
-                                                <a href="imges/Details/Chemiluminescence Immunoassay RL-C2000.jpg" target="_blank" target="_blank" id="face-mask" class="quick-view-text" title="Quick View">
+                                                <a href="" onclick="OpenModel('imges/Details/Chemiluminescence Immunoassay RL-C2000.jpg')" target="_blank" target="_blank" id="face-mask" class="quick-view-text" title="Quick View">
                                                     <b class="far fa-eye"></b>
                                                     <i>Detials</i>
                                                 </a>
@@ -233,7 +239,7 @@
                                         </div>
                                         <div class="ImageWrapper">
                                             <div class="product-button">
-                                                <a href="imges/Details/Hematology Analyzer Z3.jpg" target="_blank" id="face-mask" class="quick-view-text" title="Quick View">
+                                                <a href="" onclick="OpenModel('imges/Details/Hematology Analyzer Z3.jpg')" target="_blank" id="face-mask" class="quick-view-text" title="Quick View">
                                                     <b class="far fa-eye"></b>
                                                     <i>Detials</i>
                                                 </a>
@@ -271,7 +277,7 @@
                                         <div class="product_right_tag"></div>
                                         <div class="ImageWrapper">
                                             <div class="product-button">
-                                                <a href="imges/Details/CERA CHECK 1070-0١.jpg" target="_blank" id="face-mask" class="quick-view-text" title="Quick View">
+                                                <a href="" onclick="OpenModel('imges/Details/CERA CHECK 1070-0١.jpg')" target="_blank" id="face-mask" class="quick-view-text" title="Quick View">
                                                     <b class="far fa-eye"></b>
                                                     <i>Detials</i>
                                                 </a>
@@ -308,7 +314,7 @@
                                         <div class="product_right_tag  "></div>
                                         <div class="ImageWrapper">
                                             <div class="product-button">
-                                                <a href="imges/Details/cera check Hb-0١.jpg" target="_blank" id="face-mask" class="quick-view-text" title="Quick View">
+                                                <a href="" onclick="OpenModel('imges/Details/cera check Hb-0١.jpg')" target="_blank" id="face-mask" class="quick-view-text" title="Quick View">
                                                     <b class="far fa-eye"></b>
                                                     <i>Detials</i>
                                                 </a>
@@ -346,7 +352,7 @@
                                         </div>
                                         <div class="ImageWrapper">
                                             <div class="product-button">
-                                                <a href="imges/Details/labona check-0١.jpg" target="_blank" id="face-mask" class="quick-view-text" title="Quick View">
+                                                <a href="" onclick="OpenModel('imges/Details/labona check-0١.jpg')" target="_blank" id="face-mask" class="quick-view-text" title="Quick View">
                                                     <b class="far fa-eye"></b>
                                                     <i>Detials</i>
                                                 </a>
@@ -359,7 +365,7 @@
                                     </div>
                                     <div class="product-detail">
 
-                                        <a href="collections/best-seller/products/oxygen-pump.html" class="grid-link__title">Labona Check A1c</a>
+                                        <a href="collections/best-seller/products/oxygen-pump.html" class="grid-link__title">Labona Check<span style="color: #eb1c25;"> A1c</span></a>
                                         <div class="grid-link__meta">
                                             <div class="product_price">
                                                 <div class="grid-link__org_price" id="ProductPrice">
@@ -384,13 +390,13 @@
                                 <div class="products product-hover-14">
                                     <div class="product-container">
                                         <div class="ImageOverlayCa"></div>
-                                        <img src="imges/Pro/GCMSGreenCare A1C.jpg" class="featured-image" alt="Face Mask">
+                                        <img src="imges/Pro/GCMSGreenCare A1C.jpg" style="height: 70%;width: 100%;" class="featured-image" alt="Face Mask">
 
                                         <div class="product_right_tag  ">
                                         </div>
                                         <div class="ImageWrapper">
                                             <div class="product-button">
-                                                <a href="imges/Details/green care-0١.jpg" target="_blank" id="face-mask" class="quick-view-text" title="Quick View">
+                                                <a href="" onclick="OpenModel('imges/Details/green care-0١.jpg')" target="_blank" id="face-mask" class="quick-view-text" title="Quick View">
                                                     <b class="far fa-eye"></b>
                                                     <i>Detials</i>
                                                 </a>
@@ -402,12 +408,12 @@
                                         </div>
                                     </div>
                                     <div class="product-detail">
-                                        <a href="collections/best-seller/products/face-mask.html" class="grid-link__title">GreenCare A1c</a>
+                                        <a href="collections/best-seller/products/face-mask.html" class="grid-link__title">GreenCare <span style="color: #eb1c25;"> A1c</span></a>
                                         <div class="grid-link__meta">
                                             <div class="product_price">
                                                 <div class="grid-link__org_price" id="ProductPrice">
                                                     <p>
-                                                        Easy blood sampling<br> No pipetting<br> No sample preparation<br> Reduced test errors by operator<br>
+                                                        Coagulation
                                                     </p>
                                                 </div>
                                             </div>
@@ -418,38 +424,83 @@
                             </div>
                         </div>
                     </div>
+
                     <div class="container col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 d-block Product_1">
                         <div class="ProCardProduct grid__item">
-                            <div class="products product-hover-14 ">
-                                <div class="product-container">
-                                    <div class="ImageOverlayCa"></div>
-                                    <img src="imges/Pro/cd-4004_labitec_2017-1-3.png" class="featured-image" alt="Glucometer Machine">
-                                    <div class="product_right_tag  "> </div>
-                                    <div class="ImageWrapper">
-                                        <div class="product-button">
-                                            <a href="imges/Details/coadata 2004.4004-0١.jpg" target="_blank" id="face-mask" class="quick-view-text" title="Quick View">
-                                                <b class="far fa-eye"></b>
-                                                <i>Detials</i>
-                                            </a>
-                                            <a class="add-cart-btn" onclick="window.open('https://www.labitec.de/produkte/coadata-4004-2/')" href="" target="_blank" title="Add to Cart">
-                                                <b class="fas fa-shopping-cart"></b>
-                                                <i>Go To Site</i>
-                                            </a>
+
+                            <div class="article">
+
+                                <div class="products product-hover-14 ">
+                                    <div class="product-container">
+                                        <div class="ImageOverlayCa"></div>
+                                        <img src="imges/Pro/COADATA-504-1.jpg" class="featured-image" alt="Face Mask">
+
+                                        <div class="product_right_tag  ">
+                                        </div>
+                                        <div class="ImageWrapper">
+                                            <div class="product-button">
+                                                <a href="" onclick="OpenModel('imges/Details/coadata 405 flyer-0١.jpg')" target="_blank" id="face-mask" class="quick-view-text" title="Quick View">
+                                                    <b class="far fa-eye"></b>
+                                                    <i>Detials</i>
+                                                </a>
+                                                <a class="add-cart-btn" onclick="window.open('https://www.labitec.de/')" href="" target="_blank" title="Add to Cart">
+                                                    <b class="fas fa-shopping-cart"></b>
+                                                    <i>Go To Site</i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-detail">
+                                        <a href="collections/best-seller/products/face-mask.html" class="grid-link__title">CoaDATA 504</a>
+                                        <div class="grid-link__meta">
+                                            <div class="product_price">
+                                                <div class="grid-link__org_price" id="ProductPrice">
+                                                    <p>Turbodensitometric Measuring Principle</p>
+                                                </div>
+                                            </div>
+                                            <span class="shopify-product-reviews-badge" data-id="1475748462692"></span>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="product-detail">
-                                    <a href="" class="grid-link__title">CoaDATA 4004</a>
-                                    <div class="grid-link__meta">
-                                        <div class="product_price">
-                                            <div class="grid-link__org_price" id="ProductPrice">
-                                                <p>
-                                                    </span>
-                                                    Continuing development of the existing turbodensitometric measuring principle.
-                                                    </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 d-block Product_1">
+                        <div class="ProCardProduct grid__item">
+                            <div class="article">
+                                <div class="products product-hover-14 ">
+                                    <div class="product-container">
+                                        <div class="ImageOverlayCa"></div>
+                                        <img src="imges/Pro/COADATA-504-1.jpg" class="featured-image" alt="Oxygen Pump">
+                                        <div class="product_right_tag  ">
+                                        </div>
+                                        <div class="ImageWrapper">
+                                            <div class="product-button">
+                                                <a href="" onclick="OpenModel('imges/Details/CoaDATA 504+.png')" target="_blank" id="face-mask" class="quick-view-text" title="Quick View">
+                                                    <b class="far fa-eye"></b>
+                                                    <i>Detials</i>
+                                                </a>
+                                                <a class="add-cart-btn" onclick="window.open('http://www.labitec.de/produkte/coadata-504-4/')" href="" target="_blank" title="Add to Cart">
+                                                    <b class="fas fa-shopping-cart"></b>
+                                                    <i>Go To Site</i>
+                                                </a>
                                             </div>
                                         </div>
-                                        <span class="shopify-product-reviews-badge" data-id="1474534178916"></span>
+                                    </div>
+                                    <div class="product-detail">
+
+                                        <a href="" class="grid-link__title">CoaDATA 504+</a>
+                                        <div class="grid-link__meta">
+                                            <div class="product_price">
+                                                <div class="grid-link__org_price" id="ProductPrice">
+                                                    <p>
+                                                        Coagulation
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <span class="shopify-product-reviews-badge" data-id="1475459252324"></span>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -465,7 +516,7 @@
                                         <div class="product_right_tag  "></div>
                                         <div class="ImageWrapper">
                                             <div class="product-button">
-                                                <a href="imges/Details/coadata 2004.4004-0١.jpg" target="_blank" id="face-mask" class="quick-view-text" title="Quick View">
+                                                <a href="" onclick="OpenModel('imges/Details/coadata 2004.4004-0١.jpg')" target="_blank" id="face-mask" class="quick-view-text" title="Quick View">
                                                     <b class="far fa-eye"></b>
                                                     <i>Detials</i>
                                                 </a>
@@ -493,6 +544,45 @@
                             </div>
                         </div>
                     </div>
+
+                    <div class="container col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 d-block Product_1">
+                        <div class="ProCardProduct grid__item">
+                            <div class="products product-hover-14 ">
+                                <div class="product-container">
+                                    <div class="ImageOverlayCa"></div>
+                                    <img src="imges/Pro/cd-4004_labitec_2017-1-3.png" class="featured-image" alt="Glucometer Machine">
+                                    <div class="product_right_tag  "> </div>
+                                    <div class="ImageWrapper">
+                                        <div class="product-button">
+                                            <a href="" onclick="OpenModel('imges/Details/coadata 2004.4004-0١.jpg')" target="_blank" id="face-mask" class="quick-view-text" title="Quick View">
+                                                <b class="far fa-eye"></b>
+                                                <i>Detials</i>
+                                            </a>
+                                            <a class="add-cart-btn" onclick="window.open('https://www.labitec.de/produkte/coadata-4004-2/')" href="" target="_blank" title="Add to Cart">
+                                                <b class="fas fa-shopping-cart"></b>
+                                                <i>Go To Site</i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-detail">
+                                    <a href="" class="grid-link__title">CoaDATA 4004</a>
+                                    <div class="grid-link__meta">
+                                        <div class="product_price">
+                                            <div class="grid-link__org_price" id="ProductPrice">
+                                                <p>
+                                                    </span>
+                                                    Coagulation
+                                                    </span>
+                                            </div>
+                                        </div>
+                                        <span class="shopify-product-reviews-badge" data-id="1474534178916"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                     <div class="container col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 d-block Product_1">
                         <div class="ProCardProduct grid__item">
                             <div class="article">
@@ -503,7 +593,7 @@
                                         <div class="product_right_tag"></div>
                                         <div class="ImageWrapper">
                                             <div class="product-button">
-                                                <a href="imges/Details/CoaLAB 1000.png" target="_blank" id="face-mask" class="quick-view-text" title="Quick View">
+                                                <a href="" onclick="OpenModel('imges/Details/CoaLAB 1000.png')" target="_blank" id="face-mask" class="quick-view-text" title="Quick View">
                                                     <b class="far fa-eye"></b>
                                                     <i>Detials</i>
                                                 </a>
@@ -520,7 +610,7 @@
                                             <div class="product_price">
                                                 <div class="grid-link__org_price" id="ProductPrice">
                                                     <p>
-                                                        A compact fully automated clotting, chromogenic and immunturbidimetric coagulation analyzer.
+                                                        Aggeragation
                                                     </p>
                                                 </div>
                                             </div>
@@ -541,7 +631,7 @@
                                         <div class="product_right_tag  "></div>
                                         <div class="ImageWrapper">
                                             <div class="product-button">
-                                                <a href="imges/Details/4004-preview.jpg" target="_blank" id="face-mask" class="quick-view-text" title="Quick View">
+                                                <a href="" onclick="OpenModel('imges/Details/4004-preview.jpg')" target="_blank" id="face-mask" class="quick-view-text" title="Quick View">
                                                     <b class="far fa-eye"></b>
                                                     <i>Detials</i>
                                                 </a>
@@ -557,7 +647,7 @@
                                         <div class="grid-link__meta">
                                             <div class="product_price">
                                                 <div class="grid-link__org_price" id="ProductPrice">
-                                                    <p>Ideal partner when monitoring of thrombocyte-induced haemostasis disorders</p>
+                                                    <p>Coagulation</p>
                                                 </div>
                                             </div>
                                             <span class="shopify-product-reviews-badge" data-id="1474604040292"></span>
@@ -568,86 +658,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="container col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 d-block Product_1">
-                        <div class="ProCardProduct grid__item">
-                            <div class="article">
-                                <div class="products product-hover-14 ">
-                                    <div class="product-container">
-                                        <div class="ImageOverlayCa"></div>
-                                        <img src="imges/Pro/COADATA-504-1.jpg" class="featured-image" alt="Oxygen Pump">
-                                        <div class="product_right_tag  ">
-                                        </div>
-                                        <div class="ImageWrapper">
-                                            <div class="product-button">
-                                                <a href="imges/Details/CoaDATA 504+.png" target="_blank" id="face-mask" class="quick-view-text" title="Quick View">
-                                                    <b class="far fa-eye"></b>
-                                                    <i>Detials</i>
-                                                </a>
-                                                <a class="add-cart-btn" onclick="window.open('http://www.labitec.de/produkte/coadata-504-4/')" href="" target="_blank" title="Add to Cart">
-                                                    <b class="fas fa-shopping-cart"></b>
-                                                    <i>Go To Site</i>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="product-detail">
 
-                                        <a href="" class="grid-link__title">CoaDATA 504+</a>
-                                        <div class="grid-link__meta">
-                                            <div class="product_price">
-                                                <div class="grid-link__org_price" id="ProductPrice">
-                                                    <p>
-                                                        Development of the existing turbodensitometric measuring principle.
-                                                    </p>
-                                                </div>
-                                            </div>
-                                            <span class="shopify-product-reviews-badge" data-id="1475459252324"></span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="container col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 d-block Product_1">
-                        <div class="ProCardProduct grid__item">
-
-                            <div class="article">
-
-                                <div class="products product-hover-14 ">
-                                    <div class="product-container">
-                                        <div class="ImageOverlayCa"></div>
-                                        <img src="imges/Pro/COADATA-504-1.jpg" class="featured-image" alt="Face Mask">
-
-                                        <div class="product_right_tag  ">
-                                        </div>
-                                        <div class="ImageWrapper">
-                                            <div class="product-button">
-                                                <a href="imges/Details/coadata 405 flyer-0١.jpg" target="_blank" id="face-mask" class="quick-view-text" title="Quick View">
-                                                    <b class="far fa-eye"></b>
-                                                    <i>Detials</i>
-                                                </a>
-                                                <a class="add-cart-btn" onclick="window.open('https://www.labitec.de/')" href="" target="_blank" title="Add to Cart">
-                                                    <b class="fas fa-shopping-cart"></b>
-                                                    <i>Go To Site</i>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="product-detail">
-                                        <a href="collections/best-seller/products/face-mask.html" class="grid-link__title">CoaDATA 504</a>
-                                        <div class="grid-link__meta">
-                                            <div class="product_price">
-                                                <div class="grid-link__org_price" id="ProductPrice">
-                                                    <p>Turbodensitometric Measuring Principle</p>
-                                                </div>
-                                            </div>
-                                            <span class="shopify-product-reviews-badge" data-id="1475748462692"></span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
 
 
 
@@ -846,6 +857,11 @@
             } else {
                 $('.col-xl-4.col-lg-4.col-md-6.col-sm-6.col-12.d-block').removeClass('d-block');
                 $('.Product_' + id).addClass('d-block');
+            }
+            width = $(this).width();
+            if (width < 1300) {
+                $('#sidebar').addClass("active");
+                $('#sidebarCollapse').removeClass('active');
             }
         }
     </script>
