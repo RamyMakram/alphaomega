@@ -1710,14 +1710,17 @@ footer.site-footer {
 .MainTitle {
     font-weight: bold;
 }
+
 .copyright {
     background-color: #2d3094 !important;
     height: 48px !important;
     padding: 10px !important;
 }
+
 p.copyright_left {
     padding: 0 !important;
 }
+
 .product-tab-type-8 .full_width_tab ul.dt-sc-tabs li a.current {
     color: #fff !important;
     background: #076cec;
