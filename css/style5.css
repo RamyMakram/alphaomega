@@ -80,9 +80,9 @@ a:focus {
 }
 
 #sidebar ul.components {
-    padding: 0 20px 20px 24px;
+    padding: 0 0px 20px 24px;
     color: #2e318f;
-    height: calc(100vh - 244px);
+    height: calc(100vh - 221px);
     overflow: auto;
 }
 
@@ -253,7 +253,7 @@ a.article:hover {
 
 .sidebar-header a img {
     border-radius: 20px;
-    height: 199px !important;
+    height: 176px !important;
     margin: auto;
 }
 
@@ -269,16 +269,20 @@ a.dropdown-toggle {
     cursor: pointer;
 }
 
-span.fab.fa-facebook {
+.fab.fa-facebook {
     color: white !important;
 }
 
-span.fab.fa-google-plus-g {
+.fab.fa-instagram {
+    color: red !important;
+}
+
+.fab.fa-google-plus-g {
     color: #dc4e41 !important;
 }
 
 .icon-fallback-text.twitt,
-span.fab.fa-twitter {
+.fab.fa-twitter {
     color: #35c7df !important;
 }
 

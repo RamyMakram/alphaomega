@@ -57,80 +57,13 @@
 
     <!-- Font Awesome JS -->
 </head>
-<script>
-    function OpenModel(ID) {
-        // $(".user-drawer")[0].style.left = '0';
-        // $(".userForm")[0].style.position = 'fixed';
-        // $(".userForm")[0].style.height = '100%';
-        // $(".user-drawer")[0].style.borderBottomLeftRadius = '0';
-        // $("body").css("overflow", "hidden");
-    }
-
-    function Close() {
-        // $(".user-drawer")[0].style.left = '100%';
-        // $("body").css("overflow-y", "auto");
-        // $(".user-drawer")[0].style.borderBottomLeftRadius = '125px'
-        // setTimeout(function() {
-        //     $(".userForm")[0].style.height = '0';
-        //     $(".userForm")[0].style.position = 'unset';
-        // }, 700)
-    }
-</script>
 
 <body id="medik" class="template-index" style="overflow:hidden !important">
-    <!-- <div class="userForm">
-        <div class="user-drawer">
-            <div class="user-menu">
-                <div class="ModalContent">
-                    <h1 style="float: right;padding:10px;cursor: pointer;" onclick="Close(1)">X</h1>
-                    <div class="row">
-                        <div class="containercontainercol-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 d-block d-block">
-                            <img src="imges/Pro/GCMSLabona-Check-A1C.jpg" class="featured-image" alt="Oxygen Pump">
-                        </div>
-                        <div class="containercontainercol-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 d-block d-block">
-                            <div class="row">
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> -->
-
-    <!-- <div class="wrapper-container">
-        <div class="header-type-5">
-            <header class="site-header">
-                <div class="header-sticky">
-                    <div id="header-landing" class="sticky-animate">
-                        <div id="shopify-section-header-model-5" class="shopify-section">
-                            <div class="grid--full site-header__menubar">
-                                <div class="container">
-                                    <div class="menu_icon_section">
-                                        <h1 class="site-header__logo order-header" itemscope itemtype="http://schema.org/Organization">
-                                            <a href="index.html">
-                                                <img class="normal-logo" src="imges/LOGO.jpg" alt="" itemprop="logo">
-                                            </a>
-                                        </h1>
-                                        <div class="menu_icon_container">
-                                            <ul class="menu_icon grid__item wide--one-sixth post-large--one-sixth large--one-sixth">
-                                                <ul class="top_bar_left">
-                                                    <li><i class="fa fa-phone"></i><a href="tel:+226439012">02-26439012</a> / <a href="tel:+226439012">02-26439013</a></li>
-                                                    <li><i class="fa fa-envelope"></i> <a href="mailto:info@alphaomegaegypt.com">info@alphaomegaegypt.com</a></li>
-                                                </ul>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </header>
-        </div>
-
-    </div> -->
-
+    <script>
+        function Toggle_() {
+            $('#Analyze').toggleClass('d-block')
+        }
+    </script>
     <div class="wrapper">
         <!-- Sidebar Holder -->
         <nav id="sidebar" class="active">
@@ -144,21 +77,35 @@
             </div>
 
             <ul class="list-unstyled components">
-                <li><a href="index.html"><i class="fas fa-home big-size"></i> Home</a></li>
+                <li><a href="index.html" class="MainTitle"><i class="fas fa-home big-size"></i> Home</a></li>
                 <li>
-                    <a onclick="Filter(0)" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="fa fa-list-alt big-size" aria-hidden="true"></i> Products</a>
+                    <a onclick="Filter(0)" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle MainTitle"><i class="fa fa-list-alt big-size" aria-hidden="true"></i> Products</a>
                     <ul class="collapse list-unstyled show in" id="homeSubmenu">
-                        <li>
-                            <a onclick="Filter(1)" class="dropdownlink" href="#">Coagulation</a onclick="Filter(0)">
+                        <li id="AnalyzeClick">
+                            <a href="#" data-toggle="collapse" href="#" onclick="Toggle_()" aria-expanded="false" class="dropdown-toggle MainTitle">Anlayzer</a>
+                            <ul class="Analyze list-unstyled" id="Analyze">
+                                <li>
+                                    <a onclick="Filter(5)" class="dropdownlink" href="#">Coagulation</a>
+                                </li>
+                                <li>
+                                    <a onclick="Filter(6)" class="dropdownlink" href="#">Hematology</a>
+                                </li>
+                                <li>
+                                    <a style="padding: 8px 9px !important;" onclick="Filter(7)" class="dropdownlink" href="#">Chemiluminescence</a>
+                                </li>
+                                <li>
+                                    <a onclick="Filter(8)" class="dropdownlink" href="#">Point Of Care</a>
+                                </li>
+                            </ul>
                         </li>
                         <li>
-                            <a onclick="Filter(2)" class="dropdownlink" href="#">Hematology</a onclick="Filter(0)">
+                            <a onclick="Filter(2)" class="dropdownlink  MainTitle" href="#">Reagent</a>
                         </li>
                         <li>
-                            <a onclick="Filter(3)" class="dropdownlink" href="#">Chemiluminescence</a>
+                            <a onclick="Filter(4)" class="dropdownlink  MainTitle" href="#">Rapid Test</a>
                         </li>
                         <li>
-                            <a onclick="Filter(4)" class="dropdownlink" href="#">Point Of Care</a>
+                            <a onclick="Filter(3)" class="dropdownlink  MainTitle" href="#">Consumables</a>
                         </li>
                     </ul>
                 </li>
@@ -190,7 +137,7 @@
                     }
                 </script>
                 <div class="row" style="justify-content: center;align-items: center;display: inline-flex !important;align-content: center;margin: auto;">
-                    <div class="container col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 d-block d-block Product_3">
+                    <div class="container col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 d-block d-block Product_7">
                         <div class="ProCardProduct grid__item">
                             <div class="article">
                                 <div class="products product-hover-14">
@@ -217,7 +164,7 @@
                                         <div class="grid-link__meta">
                                             <div class="product_price">
                                                 <div class="grid-link__org_price" id="ProductPrice">
-                                                    <p>Chemiluminescence immunoassay analyzers</p>
+                                                    <p>Chemiluminescence</p>
                                                 </div>
                                             </div>
                                             <span class="shopify-product-reviews-badge" data-id="1475748462692"></span>
@@ -227,7 +174,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="container col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 d-block Product_2">
+                    <div class="container col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 d-block Product_6 Product_2">
                         <div class="ProCardProduct grid__item">
                             <div class="article">
                                 <div class="products product-hover-14">
@@ -256,7 +203,7 @@
                                             <div class="product_price">
                                                 <div class="grid-link__org_price" id="ProductPrice">
                                                     <p>
-                                                        A new generation 3-diff hematology analyzer tailored for small laboratory
+                                                        Hematology
                                                     </p>
                                                 </div>
                                             </div>
@@ -267,81 +214,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="container col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 d-block Product_4">
-                        <div class="ProCardProduct grid__item">
-                            <div class="article">
-                                <div class="products product-hover-14">
-                                    <div class="product-container">
-                                        <div class="ImageOverlayCa"></div>
-                                        <img src="imges/Pro/GCMSceracheck 1070.png" class="featured-image" alt="Forehead Thermometer" style="width: auto;height: auto;">
-                                        <div class="product_right_tag"></div>
-                                        <div class="ImageWrapper">
-                                            <div class="product-button">
-                                                <a href="" onclick="OpenModel('imges/Details/CERA CHECK 1070-0١.jpg')" target="_blank" id="face-mask" class="quick-view-text" title="Quick View">
-                                                    <b class="far fa-eye"></b>
-                                                    <i>Detials</i>
-                                                </a>
-                                                <a class="add-cart-btn" onclick="window.open('http://gcmedis.com/src/sub213.php')" href="" target="_blank" title="Add to Cart">
-                                                    <b class="fas fa-shopping-cart"></b>
-                                                    <i>Go To Site</i>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="product-detail">
-                                        <a href="collections/best-seller/products/forehead-thermometer.html" class="grid-link__title">Cera Check 1070</a>
-                                        <div class="grid-link__meta">
-                                            <div class="product_price">
-                                                <div class="grid-link__org_price" id="ProductPrice">
-                                                    <p>Blood Glucose Monitoring System
-                                                    </p>
-                                                </div>
-                                            </div>
-                                            <span class="shopify-product-reviews-badge" data-id="1474581823588"></span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="container col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 d-block Product_4">
-                        <div class="ProCardProduct grid__item">
-                            <div class="article">
-                                <div class="products product-hover-14">
-                                    <div class="product-container">
-                                        <div class="ImageOverlayCa"></div>
-                                        <img src="imges/Pro/GCMS CeraCheck.jpg" class="featured-image" alt="Orthopedic Footwear">
-                                        <div class="product_right_tag  "></div>
-                                        <div class="ImageWrapper">
-                                            <div class="product-button">
-                                                <a href="" onclick="OpenModel('imges/Details/cera check Hb-0١.jpg')" target="_blank" id="face-mask" class="quick-view-text" title="Quick View">
-                                                    <b class="far fa-eye"></b>
-                                                    <i>Detials</i>
-                                                </a>
-                                                <a class="add-cart-btn" onclick="window.open('http://gcmedis.com/src/sub22.php')" href="" target="_blank" title="Add to Cart">
-                                                    <b class="fas fa-shopping-cart"></b>
-                                                    <i>Go To Site</i>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="product-detail">
-                                        <a href="collections/best-seller/products/orthopedic-footwear.html" class="grid-link__title">Cera Check Hb Plus</a>
-                                        <div class="grid-link__meta">
-                                            <div class="product_price">
-                                                <div class="grid-link__org_price" id="ProductPrice">
-                                                    <p>Anytime, Anywhere!<br> Quick Tesing!
-                                                    </p>
-                                                </div>
-                                            </div>
-                                            <span class="shopify-product-reviews-badge" data-id="1474604040292"></span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="container col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 d-block Product_4">
+                    <div class="container col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 d-block Product_8">
                         <div class="ProCardProduct grid__item">
                             <div class="article">
                                 <div class="products product-hover-14">
@@ -370,8 +243,7 @@
                                             <div class="product_price">
                                                 <div class="grid-link__org_price" id="ProductPrice">
                                                     <p>
-                                                        Rapid<br> Cost-Effective
-                                                        <br> Precies and Accurate<br>
+                                                        Point Of Care
                                                     </p>
                                                 </div>
                                             </div>
@@ -383,14 +255,14 @@
                             </a>
                         </div>
                     </div>
-                    <div class="container col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 d-block Product_4">
+                    <div class="container col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 d-block Product_8">
                         <div class="ProCardProduct grid__item">
                             <div class="article">
 
                                 <div class="products product-hover-14">
                                     <div class="product-container">
                                         <div class="ImageOverlayCa"></div>
-                                        <img src="imges/Pro/GCMSGreenCare A1C.jpg" style="height: 70%;width: 100%;" class="featured-image" alt="Face Mask">
+                                        <img src="imges/Pro/GCMSGreenCare A1C.jpg" style="height: 81%;width: 81%;" class="featured-image" alt="Face Mask">
 
                                         <div class="product_right_tag  ">
                                         </div>
@@ -413,7 +285,7 @@
                                             <div class="product_price">
                                                 <div class="grid-link__org_price" id="ProductPrice">
                                                     <p>
-                                                        Coagulation
+                                                        Point Of Care
                                                     </p>
                                                 </div>
                                             </div>
@@ -424,8 +296,85 @@
                             </div>
                         </div>
                     </div>
+                    <div class="container col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 d-block Product_8">
+                        <div class="ProCardProduct grid__item">
+                            <div class="article">
+                                <div class="products product-hover-14">
+                                    <div class="product-container">
+                                        <div class="ImageOverlayCa"></div>
+                                        <img src="imges/Pro/GCMSceracheck 1070.png" class="featured-image" alt="Forehead Thermometer" style="width: auto;height: auto;">
+                                        <div class="product_right_tag"></div>
+                                        <div class="ImageWrapper">
+                                            <div class="product-button">
+                                                <a href="" onclick="OpenModel('imges/Details/CERA CHECK 1070-0١.jpg')" target="_blank" id="face-mask" class="quick-view-text" title="Quick View">
+                                                    <b class="far fa-eye"></b>
+                                                    <i>Detials</i>
+                                                </a>
+                                                <a class="add-cart-btn" onclick="window.open('http://gcmedis.com/src/sub213.php')" href="" target="_blank" title="Add to Cart">
+                                                    <b class="fas fa-shopping-cart"></b>
+                                                    <i>Go To Site</i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-detail">
+                                        <a href="collections/best-seller/products/forehead-thermometer.html" class="grid-link__title">Cera Check 1070</a>
+                                        <div class="grid-link__meta">
+                                            <div class="product_price">
+                                                <div class="grid-link__org_price" id="ProductPrice">
+                                                    <p>
+                                                        Point Of Care
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <span class="shopify-product-reviews-badge" data-id="1474581823588"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 d-block Product_8">
+                        <div class="ProCardProduct grid__item">
+                            <div class="article">
+                                <div class="products product-hover-14">
+                                    <div class="product-container">
+                                        <div class="ImageOverlayCa"></div>
+                                        <img src="imges/Pro/GCMS CeraCheck.jpg" class="featured-image" alt="Orthopedic Footwear">
+                                        <div class="product_right_tag  "></div>
+                                        <div class="ImageWrapper">
+                                            <div class="product-button">
+                                                <a href="" onclick="OpenModel('imges/Details/cera check Hb-0١.jpg')" target="_blank" id="face-mask" class="quick-view-text" title="Quick View">
+                                                    <b class="far fa-eye"></b>
+                                                    <i>Detials</i>
+                                                </a>
+                                                <a class="add-cart-btn" onclick="window.open('http://gcmedis.com/src/sub22.php')" href="" target="_blank" title="Add to Cart">
+                                                    <b class="fas fa-shopping-cart"></b>
+                                                    <i>Go To Site</i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-detail">
+                                        <a href="collections/best-seller/products/orthopedic-footwear.html" class="grid-link__title">Cera Check Hb Plus</a>
+                                        <div class="grid-link__meta">
+                                            <div class="product_price">
+                                                <div class="grid-link__org_price" id="ProductPrice">
+                                                    <p>
+                                                        Point Of Care
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <span class="shopify-product-reviews-badge" data-id="1474604040292"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-                    <div class="container col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 d-block Product_1">
+
+                    <div class="container col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 d-block Product_5 Product_2">
                         <div class="ProCardProduct grid__item">
 
                             <div class="article">
@@ -455,7 +404,7 @@
                                         <div class="grid-link__meta">
                                             <div class="product_price">
                                                 <div class="grid-link__org_price" id="ProductPrice">
-                                                    <p>Turbodensitometric Measuring Principle</p>
+                                                    <p>Coagulation</p>
                                                 </div>
                                             </div>
                                             <span class="shopify-product-reviews-badge" data-id="1475748462692"></span>
@@ -466,7 +415,7 @@
                         </div>
                     </div>
 
-                    <div class="container col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 d-block Product_1">
+                    <div class="container col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 d-block Product_5 Product_2">
                         <div class="ProCardProduct grid__item">
                             <div class="article">
                                 <div class="products product-hover-14 ">
@@ -477,7 +426,7 @@
                                         </div>
                                         <div class="ImageWrapper">
                                             <div class="product-button">
-                                                <a href="" onclick="OpenModel('imges/Details/CoaDATA 504+.png')" target="_blank" id="face-mask" class="quick-view-text" title="Quick View">
+                                                <a href="" onclick="OpenModel('imges/Details/CoaDATA504.jpg')" target="_blank" id="face-mask" class="quick-view-text" title="Quick View">
                                                     <b class="far fa-eye"></b>
                                                     <i>Detials</i>
                                                 </a>
@@ -506,7 +455,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="container col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 d-block Product_1">
+                    <div class="container col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 d-block Product_5 Product_2">
                         <div class="ProCardProduct grid__item">
                             <div class="article">
                                 <div class="products product-hover-14 ">
@@ -533,7 +482,7 @@
                                             <div class="product_price">
                                                 <div class="grid-link__org_price" id="ProductPrice">
                                                     <p>
-                                                        Planning Committees: (International Scientific Programme, Scientific Advisory, and the Local Organization)
+                                                        Coagulation
                                                     </p>
                                                 </div>
                                             </div>
@@ -545,7 +494,7 @@
                         </div>
                     </div>
 
-                    <div class="container col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 d-block Product_1">
+                    <div class="container col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 d-block Product_5 Product_2">
                         <div class="ProCardProduct grid__item">
                             <div class="products product-hover-14 ">
                                 <div class="product-container">
@@ -583,7 +532,7 @@
                         </div>
                     </div>
 
-                    <div class="container col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 d-block Product_1">
+                    <div class="container col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 d-block Product_5 Product_2">
                         <div class="ProCardProduct grid__item">
                             <div class="article">
                                 <div class="products product-hover-14 ">
@@ -593,7 +542,7 @@
                                         <div class="product_right_tag"></div>
                                         <div class="ImageWrapper">
                                             <div class="product-button">
-                                                <a href="" onclick="OpenModel('imges/Details/CoaLAB 1000.png')" target="_blank" id="face-mask" class="quick-view-text" title="Quick View">
+                                                <a href="" onclick="OpenModel('imges/Details/CoaLAB1000.jpg')" target="_blank" id="face-mask" class="quick-view-text" title="Quick View">
                                                     <b class="far fa-eye"></b>
                                                     <i>Detials</i>
                                                 </a>
@@ -610,7 +559,7 @@
                                             <div class="product_price">
                                                 <div class="grid-link__org_price" id="ProductPrice">
                                                     <p>
-                                                        Aggeragation
+                                                        Coagulation
                                                     </p>
                                                 </div>
                                             </div>
@@ -621,7 +570,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="container col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 d-block Product_1">
+                    <div class="container col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 d-block Product_5 Product_2">
                         <div class="ProCardProduct grid__item">
                             <div class="article">
                                 <div class="products product-hover-14 ">
@@ -647,7 +596,74 @@
                                         <div class="grid-link__meta">
                                             <div class="product_price">
                                                 <div class="grid-link__org_price" id="ProductPrice">
-                                                    <p>Coagulation</p>
+                                                    <p>Aggeragation</p>
+                                                </div>
+                                            </div>
+                                            <span class="shopify-product-reviews-badge" data-id="1474604040292"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="container col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 d-block Product_3">
+                        <div class="ProCardProduct grid__item">
+                            <div class="article">
+                                <div class="products product-hover-14 ">
+                                    <div class="product-container">
+                                        <div class="ImageOverlayCa"></div>
+                                        <img src="imges/ourclient/flmedical.png" class="featured-image" alt="Orthopedic Footwear">
+                                        <div class="product_right_tag  "></div>
+                                        <div class="ImageWrapper">
+                                            <div class="product-button">
+                                                <a class="add-cart-btn" style="width: 100% !important;" onclick="window.open('https://www.flmedical.com/products/')" href="" target="_blank" title="Add to Cart">
+                                                    <b class="fas fa-shopping-cart"></b>
+                                                    <i>Go To Site</i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-detail">
+                                        <a href="" class="grid-link__title">Fl Medical</a>
+                                        <div class="grid-link__meta">
+                                            <div class="product_price">
+                                                <div class="grid-link__org_price" id="ProductPrice">
+                                                    <p>Used Equipment</p>
+                                                </div>
+                                            </div>
+                                            <span class="shopify-product-reviews-badge" data-id="1474604040292"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="container col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 d-block Product_4">
+                        <div class="ProCardProduct grid__item">
+                            <div class="article">
+                                <div class="products product-hover-14 ">
+                                    <div class="product-container">
+                                        <div class="ImageOverlayCa"></div>
+                                        <img src="imges/ourclient/wondfo.png" class="featured-image" alt="Orthopedic Footwear">
+                                        <div class="product_right_tag  "></div>
+                                        <div class="ImageWrapper">
+                                            <div class="product-button">
+                                                <a class="add-cart-btn" style="width: 100% !important;" onclick="window.open('http://wondfousa.com/products/')" href="" target="_blank" title="Add to Cart">
+                                                    <b class="fas fa-shopping-cart"></b>
+                                                    <i>Go To Site</i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-detail">
+                                        <a href="" class="grid-link__title">Wondfo</a>
+                                        <div class="grid-link__meta">
+                                            <div class="product_price">
+                                                <div class="grid-link__org_price" id="ProductPrice">
+                                                    <p>Used Equipment</p>
                                                 </div>
                                             </div>
                                             <span class="shopify-product-reviews-badge" data-id="1474604040292"></span>
@@ -702,12 +718,12 @@
                                             <div class="footer_social_links">
                                                 <ul class="site-footer__links" style="display: inline-flex;">
                                                     <li>
-                                                        <a class="icon-fallback-text twitt hexagon" target="blank" href="https://twitter.com/" title="Twitter">
-                                                            <span class="fab fa-twitter" aria-hidden="true"></span>
+                                                        <a class="icon-fallback-text instagram hexagon" target="blank" href="https://instagram.com/" title="Instagram">
+                                                            <span class="fab fa-instagram" aria-hidden="true"></span>
                                                         </a>
                                                     </li>
                                                     <li>
-                                                        <a class="icon-fallback-text fb hexagon" target="blank" href="https://www.facebook.com/" title="Facebook">
+                                                        <a class="icon-fallback-text fb hexagon" target="blank" href="https://www.facebook.com/Alpha-Omega-241472079777783/" title="Facebook">
                                                             <span class="fab fa-facebook" aria-hidden="true"></span>
                                                             <span class="fallback-text">Facebook</span>
                                                         </a>
@@ -831,12 +847,13 @@
     </script>
     <script>
         function Collapse(id) {
-            if ($(id).hasClass("show"))
-                $(id).removeClass("show").removeClass("in");
-            else {
-                $(".show.in").removeClass("show").removeClass("in");
-                $(id).addClass("show").addClass("in");
-            }
+            console.log("Collapse")
+                // if ($(id).hasClass("show"))
+                //     $(id).removeClass("show").removeClass("in");
+                // else {
+                //     $(".show.in").removeClass("show").removeClass("in");
+                //     $(id).addClass("show").addClass("in");
+                // }
         }
 
         var width = $(window).width();
@@ -858,18 +875,16 @@
                 $('.col-xl-4.col-lg-4.col-md-6.col-sm-6.col-12.d-block').removeClass('d-block');
                 $('.Product_' + id).addClass('d-block');
             }
-            width = $(this).width();
-            if (width < 1300) {
-                $('#sidebar').addClass("active");
-                $('#sidebarCollapse').removeClass('active');
+            if (id != 1) {
+                width = $(this).width();
+                if (width < 1300) {
+                    $('#sidebar').addClass("active");
+                    $('#sidebarCollapse').removeClass('active');
+                }
             }
         }
     </script>
-    <style>
-        .grid-link__meta {
-            display: none !important;
-        }
-    </style>
+
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
 
 </body>
