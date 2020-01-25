@@ -8,8 +8,12 @@
 
 
     <script>
-        function VoucherSourcetoPrint(source) {
+        $(document).ready(function() {
+            var name = localStorage.getItem("name");
+            $('#img').attr('src', name)
+        })
 
+        function VoucherSourcetoPrint(source) {
             return "<html><head><meta property='og:title' content='alphaomegaegypt'><script> function step1(){\n" +
                 "setTimeout('step2()', 10);}\n" +
                 "function step2(){window.print();window.close()}\n" +
@@ -24,10 +28,6 @@
             pwa.document.write(VoucherSourcetoPrint(source));
             pwa.document.close();
         }
-        $(document).ready(function() {
-            var name = localStorage.getItem("name");
-            $('#img').attr('src', name)
-        })
     </script>
 </head>
 

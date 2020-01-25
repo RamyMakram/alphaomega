@@ -45,7 +45,7 @@
     <script>
         function OpenModel(img) {
             localStorage.setItem("name", img);
-            window.open('ProductDetials.html')
+            window.open('ProductDetials.html', '_blank')
         }
     </script>
     <script>
@@ -191,30 +191,6 @@
         </div>
 
     </div>
-    <!-- <a onclick="Download()" href="">Download March 2014 Report</a> -->
-    <script>
-        function Download() {
-            fetch('http://www.alphaomegaegypt.com/images/logoheader.jpg')
-                .then(resp => resp.blob())
-                .then(blob => {
-                    const url = window.URL.createObjectURL(blob);
-                    const a = document.createElement('a');
-                    a.style.display = 'none';
-                    a.href = url;
-                    // the filename you want
-                    a.download = '1.png';
-                    document.body.appendChild(a);
-                    a.click();
-                    window.URL.revokeObjectURL(url);
-                    alert('your file has downloaded!'); // or you know, something with better UX...
-                })
-                .catch((err) => {
-                    console.log(err)
-                    alert('oh no!');
-                });
-        }
-    </script>
-    <!-- <a href="http://www.alphaomegaegypt.com/images/logoheader.jpg" download>download me</a> -->
     <div id="shopify-section-slideshow" class="shopify-section index-section index-section--flush">
         <div class="wrapper">
             <div class="home-slideshow">
@@ -303,11 +279,11 @@
                                                                                         </div>
                                                                                         <div class="ImageWrapper">
                                                                                             <div class="product-button">
-                                                                                                <a href="" onclick="OpenModel('imges/Details/coadata 405 flyer-0١.jpg')" target="_blank" id="face-mask" class="quick-view-text" title="Quick View">
+                                                                                                <a href="#" onclick="OpenModel('imges/Details/coadata 405 flyer-0١.jpg')" target="_blank" id="face-mask" class="quick-view-text" title="Quick View">
                                                                                                     <b class="far fa-eye"></b>
                                                                                                     <i>Detials</i>
                                                                                                 </a>
-                                                                                                <a class="add-cart-btn" onclick="window.open('https://www.labitec.de/')" href="" target="_blank" title="Add to Cart">
+                                                                                                <a class="add-cart-btn" onclick="console.log('Go To Site');window.open('https://www.labitec.de/')" href="#" target="_blank" title="Add to Cart">
                                                                                                     <b class="fas fa-shopping-cart"></b>
                                                                                                     <i>Go To Site</i>
                                                                                                 </a>
@@ -339,11 +315,11 @@
                                                                                         </div>
                                                                                         <div class="ImageWrapper">
                                                                                             <div class="product-button">
-                                                                                                <a href="" onclick="OpenModel('imges/Details/CoaDATA504.jpg')" target="_blank" id="face-mask" class="quick-view-text" title="Quick View">
+                                                                                                <a href="#" onclick="OpenModel('imges/Details/CoaDATA504.jpg')" target="_blank" id="face-mask" class="quick-view-text" title="Quick View">
                                                                                                     <b class="far fa-eye"></b>
                                                                                                     <i>Detials</i>
                                                                                                 </a>
-                                                                                                <a class="add-cart-btn" onclick="window.open('http://www.labitec.de/produkte/coadata-504-4/')" href="" target="_blank" title="Add to Cart">
+                                                                                                <a class="add-cart-btn" onclick="window.open('http://www.labitec.de/produkte/coadata-504-4/')" href="#" target="_blank" title="Add to Cart">
                                                                                                     <b class="fas fa-shopping-cart"></b>
                                                                                                     <i>Go To Site</i>
                                                                                                 </a>
@@ -376,11 +352,11 @@
                                                                                         <div class="product_right_tag  "></div>
                                                                                         <div class="ImageWrapper">
                                                                                             <div class="product-button">
-                                                                                                <a href="" onclick="OpenModel('imges/Details/coadata 2004.4004-0١.jpg')" target="_blank" id="face-mask" class="quick-view-text" title="Quick View">
+                                                                                                <a href="#" onclick="OpenModel('imges/Details/coadata 2004.4004-0١.jpg')" target="_blank" id="face-mask" class="quick-view-text" title="Quick View">
                                                                                                     <b class="far fa-eye"></b>
                                                                                                     <i>Detials</i>
                                                                                                 </a>
-                                                                                                <a class="add-cart-btn" onclick="window.open('https://www.labitec.de/produkte/coadata-4004-2/')" href="" target="_blank" title="Add to Cart">
+                                                                                                <a class="add-cart-btn" onclick="window.open('https://www.labitec.de/produkte/coadata-4004-2/')" href="#" target="_blank" title="Add to Cart">
                                                                                                     <b class="fas fa-shopping-cart"></b>
                                                                                                     <i>Go To Site</i>
                                                                                                 </a>
@@ -412,11 +388,11 @@
                                                                                     <div class="product_right_tag  "> </div>
                                                                                     <div class="ImageWrapper">
                                                                                         <div class="product-button">
-                                                                                            <a href="" onclick="OpenModel('imges/Details/coadata 2004.4004-0١.jpg')" target="_blank" id="face-mask" class="quick-view-text" title="Quick View">
+                                                                                            <a href="#" onclick="OpenModel('imges/Details/coadata 2004.4004-0١.jpg')" target="_blank" id="face-mask" class="quick-view-text" title="Quick View">
                                                                                                 <b class="far fa-eye"></b>
                                                                                                 <i>Detials</i>
                                                                                             </a>
-                                                                                            <a class="add-cart-btn" onclick="window.open('https://www.labitec.de/produkte/coadata-4004-2/')" href="" target="_blank" title="Add to Cart">
+                                                                                            <a class="add-cart-btn" onclick="window.open('https://www.labitec.de/produkte/coadata-4004-2/')" href="#" target="_blank" title="Add to Cart">
                                                                                                 <b class="fas fa-shopping-cart"></b>
                                                                                                 <i>Go To Site</i>
                                                                                             </a>
@@ -447,11 +423,11 @@
                                                                                         <div class="product_right_tag"></div>
                                                                                         <div class="ImageWrapper">
                                                                                             <div class="product-button">
-                                                                                                <a href="" onclick="OpenModel('imges/Details/CoaLAB1000.jpg')" target="_blank" id="face-mask" class="quick-view-text" title="Quick View">
+                                                                                                <a href="#" onclick="OpenModel('imges/Details/CoaLAB1000.jpg')" target="_blank" id="face-mask" class="quick-view-text" title="Quick View">
                                                                                                     <b class="far fa-eye"></b>
                                                                                                     <i>Detials</i>
                                                                                                 </a>
-                                                                                                <a class="add-cart-btn" onclick="window.open('http://www.labitec.de/produkte/coalab-1000-2')" href="" target="_blank" title="Add to Cart">
+                                                                                                <a class="add-cart-btn" onclick="window.open('http://www.labitec.de/produkte/coalab-1000-2')" href="#" target="_blank" title="Add to Cart">
                                                                                                     <b class="fas fa-shopping-cart"></b>
                                                                                                     <i>Go To Site</i>
                                                                                                 </a>
@@ -484,11 +460,11 @@
                                                                                         <div class="product_right_tag  "></div>
                                                                                         <div class="ImageWrapper">
                                                                                             <div class="product-button">
-                                                                                                <a href="" onclick="OpenModel('imges/Details/4004-preview.jpg')" target="_blank" id="face-mask" class="quick-view-text" title="Quick View">
+                                                                                                <a href="#" onclick="OpenModel('imges/Details/4004-preview.jpg')" target="_blank" id="face-mask" class="quick-view-text" title="Quick View">
                                                                                                     <b class="far fa-eye"></b>
                                                                                                     <i>Detials</i>
                                                                                                 </a>
-                                                                                                <a class="add-cart-btn" onclick="window.open('https://www.labitec.de/produkte/apact-4004-2/')" href="" target="_blank" title="Add to Cart">
+                                                                                                <a class="add-cart-btn" onclick="window.open('https://www.labitec.de/produkte/apact-4004-2/')" href="#" target="_blank" title="Add to Cart">
                                                                                                     <b class="fas fa-shopping-cart"></b>
                                                                                                     <i>Go To Site</i>
                                                                                                 </a>
@@ -575,11 +551,11 @@
                                                                                         </div>
                                                                                         <div class="ImageWrapper">
                                                                                             <div class="product-button">
-                                                                                                <a href="" onclick="OpenModel('imges/Details/green care-0١.jpg')" target="_blank" id="face-mask" class="quick-view-text" title="Quick View">
+                                                                                                <a href="#" onclick="OpenModel('imges/Details/green care-0١.jpg')" target="_blank" id="face-mask" class="quick-view-text" title="Quick View">
                                                                                                     <b class="far fa-eye"></b>
                                                                                                     <i>Detials</i>
                                                                                                 </a>
-                                                                                                <a class="add-cart-btn" onclick="window.open('https://www.omnia-health.com/product/greencare-a1c')" href="" target="_blank" title="Add to Cart">
+                                                                                                <a class="add-cart-btn" onclick="window.open('https://www.omnia-health.com/product/greencare-a1c')" href="#" target="_blank" title="Add to Cart">
                                                                                                     <b class="fas fa-shopping-cart"></b>
                                                                                                     <i>Go To Site</i>
                                                                                                 </a>
@@ -613,11 +589,11 @@
                                                                                         </div>
                                                                                         <div class="ImageWrapper">
                                                                                             <div class="product-button">
-                                                                                                <a href="" onclick="OpenModel('imges/Details/labona check-0١.jpg')" target="_blank" id="face-mask" class="quick-view-text" title="Quick View">
+                                                                                                <a href="#" onclick="OpenModel('imges/Details/labona check-0١.jpg')" target="_blank" id="face-mask" class="quick-view-text" title="Quick View">
                                                                                                     <b class="far fa-eye"></b>
                                                                                                     <i>Detials</i>
                                                                                                 </a>
-                                                                                                <a class="add-cart-btn" onclick="window.open('http://gcmedis.com/src/sub231.php')" href="" target="_blank" title="Add to Cart">
+                                                                                                <a class="add-cart-btn" onclick="window.open('http://gcmedis.com/src/sub231.php')" href="#" target="_blank" title="Add to Cart">
                                                                                                     <b class="fas fa-shopping-cart"></b>
                                                                                                     <i>Go To Site</i>
                                                                                                 </a>
@@ -652,11 +628,11 @@
                                                                                         <div class="product_right_tag  "></div>
                                                                                         <div class="ImageWrapper">
                                                                                             <div class="product-button">
-                                                                                                <a href="" onclick="OpenModel('imges/Details/cera check Hb-0١.jpg')" target="_blank" id="face-mask" class="quick-view-text" title="Quick View">
+                                                                                                <a href="#" onclick="OpenModel('imges/Details/cera check Hb-0١.jpg')" target="_blank" id="face-mask" class="quick-view-text" title="Quick View">
                                                                                                     <b class="far fa-eye"></b>
                                                                                                     <i>Detials</i>
                                                                                                 </a>
-                                                                                                <a class="add-cart-btn" onclick="window.open('http://gcmedis.com/src/sub22.php')" href="" target="_blank" title="Add to Cart">
+                                                                                                <a class="add-cart-btn" onclick="window.open('http://gcmedis.com/src/sub22.php')" href="#" target="_blank" title="Add to Cart">
                                                                                                     <b class="fas fa-shopping-cart"></b>
                                                                                                     <i>Go To Site</i>
                                                                                                 </a>
@@ -687,11 +663,11 @@
                                                                                         <div class="product_right_tag"></div>
                                                                                         <div class="ImageWrapper">
                                                                                             <div class="product-button">
-                                                                                                <a href="" onclick="OpenModel('imges/Details/CERA CHECK 1070-0١.jpg')" target="_blank" id="face-mask" class="quick-view-text" title="Quick View">
+                                                                                                <a href="#" onclick="OpenModel('imges/Details/CERA CHECK 1070-0١.jpg')" target="_blank" id="face-mask" class="quick-view-text" title="Quick View">
                                                                                                     <b class="far fa-eye"></b>
                                                                                                     <i>Detials</i>
                                                                                                 </a>
-                                                                                                <a class="add-cart-btn" onclick="window.open('http://gcmedis.com/src/sub213.php')" href="" target="_blank" title="Add to Cart">
+                                                                                                <a class="add-cart-btn" onclick="window.open('http://gcmedis.com/src/sub213.php')" href="#" target="_blank" title="Add to Cart">
                                                                                                     <b class="fas fa-shopping-cart"></b>
                                                                                                     <i>Go To Site</i>
                                                                                                 </a>
@@ -766,11 +742,11 @@
                                                         </div>
                                                         <div class="ImageWrapper">
                                                             <div class="product-button">
-                                                                <a href="" onclick="OpenModel('imges/Details/Hematology Analyzer Z3.jpg')" target="_blank" id="face-mask" class="quick-view-text" title="Quick View">
+                                                                <a href="#" onclick="OpenModel('imges/Details/Hematology Analyzer Z3.jpg')" target="_blank" id="face-mask" class="quick-view-text" title="Quick View">
                                                                     <b class="far fa-eye"></b>
                                                                     <i>Detials</i>
                                                                 </a>
-                                                                <a class="add-cart-btn" onclick="window.open('https://m.zybio.com/en/Product/Hematology/2019-02-27/100.html')" href="" target="_blank" title="Add to Cart">
+                                                                <a class="add-cart-btn" onclick="window.open('https://m.zybio.com/en/Product/Hematology/2019-02-27/100.html')" href="#" target="_blank" title="Add to Cart">
                                                                     <b class="fas fa-shopping-cart"></b>
                                                                     <i>Go To Site</i>
                                                                 </a>
@@ -803,11 +779,11 @@
                                                         </div>
                                                         <div class="ImageWrapper">
                                                             <div class="product-button">
-                                                                <a href="" onclick="OpenModel('imges/Details/Chemiluminescence Immunoassay RL-C2000.jpg')" target="_blank" id="face-mask" class="quick-view-text" title="Quick View">
+                                                                <a href="#" onclick="OpenModel('imges/Details/Chemiluminescence Immunoassay RL-C2000.jpg')" target="_blank" id="face-mask" class="quick-view-text" title="Quick View">
                                                                     <b class="far fa-eye"></b>
                                                                     <i>Detials</i>
                                                                 </a>
-                                                                <a class="add-cart-btn" onclick="window.open('http://www.realytech.com/en/')" href="" target="_blank" title="Add to Cart">
+                                                                <a class="add-cart-btn" onclick="window.open('http://www.realytech.com/en/')" href="#" target="_blank" title="Add to Cart">
                                                                     <b class="fas fa-shopping-cart"></b>
                                                                     <i>Go To Site</i>
                                                                 </a>
